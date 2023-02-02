@@ -1,0 +1,24 @@
+<!-- home.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="topnav">
+        <a class="active" href="/dashboard.html">Dashboard</a>
+        <div class="subnav">
+            <button class="subnavbtn"> <a href="#news">Inspections</a> <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+            <a href="#new-order">New Order</a>
+            </div>
+        </div>
+        <a href="#contact">Calendar</a>
+        <a href="#about">Reports</a>
+        <a href="#">Settings</a>
+        <a href="{{ url_for('logout') }}">Logout</a>
+      </div>
+    <h1>Welcome {{ username }}!</h1>
+  </body>
+</html>
